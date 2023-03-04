@@ -13,13 +13,8 @@ import {
 
 const Skills = () => {
   return (
-    <section
-      id="skills"
-      class=" py-10"
-      data-aos="fade-right"
-      data-aos-duration="1000"
-    >
-      <div class="container mx-auto px-16">
+    <section class="py-10  w-screen ">
+      <div class="container mx-auto px-16"  data-aos="fade-up">
         <h2 class="text-3xl font-extrabold mb-4 text-center text-gray-900 uppercase tracking-wider">
           Technical Skills & Expertise
         </h2>
@@ -29,9 +24,8 @@ const Skills = () => {
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
           <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
             class="card text-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out"
+            data-aos="zoom-in"
           >
             <div class="p-6">
               <SiJavascript class="text-4xl mb-2 text-blue-500 mx-auto" />
@@ -43,8 +37,7 @@ const Skills = () => {
           </div>
 
           <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            data-aos="zoom-in"
             class="card bg-white shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg text-center"
           >
             <div class="p-6">
@@ -57,8 +50,7 @@ const Skills = () => {
           </div>
 
           <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            data-aos="zoom-in"
             class="card bg-white  shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
           >
             <div class="p-6">
@@ -71,9 +63,8 @@ const Skills = () => {
             </div>
           </div>
           <div
+            data-aos="zoom-in"
             class="card bg-white shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
-            data-aos="fade-right"
-            data-aos-duration="1000"
           >
             <div class="p-6">
               <SiNodedotjs class=" text-green-600 text-4xl mb-2  mx-auto" />
@@ -85,8 +76,7 @@ const Skills = () => {
             </div>
           </div>
           <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
+            data-aos="zoom-in"
             class="card shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
           >
             <div class="p-6">
@@ -99,8 +89,7 @@ const Skills = () => {
             </div>
           </div>
           <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
+            data-aos="zoom-in"
             class="card shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
           >
             <div class="p-6">
@@ -114,8 +103,7 @@ const Skills = () => {
           </div>
 
           <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            data-aos="zoom-in"
             class="card  shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
           >
             <div class="p-6">
@@ -128,8 +116,7 @@ const Skills = () => {
             </div>
           </div>
           <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            data-aos="zoom-in"
             class="card bg-white shadow-md rounded-lg overflow-hidden  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
           >
             <div class="p-6">
@@ -143,8 +130,7 @@ const Skills = () => {
           </div>
 
           <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            data-aos="zoom-in"
             class="card  shadow-md rounded-lg overflow-hidden  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
           >
             <div class="p-6">

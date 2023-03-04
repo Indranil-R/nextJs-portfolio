@@ -3,13 +3,8 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 
 const Hero = () => {
   return (
-    <section
-      className="flex flex-col justify-center items-center h-screen px-4"
-      data-aos="fade-up"
-      data-aos-delay="500"
-      data-aos-duration="1000"
-    >
-      <h1 className="font-bold sm:text-7xl text-5xl mb-6 text-center max-w-3xl">
+    <section className="flex flex-col justify-center items-center h-screen w-screen overflow-hidden px-4"  data-aos="slide-up">
+      <h1 className="font-bold text-5xl sm:text-7xl mb-6 text-center max-w-3xl" >
         <span className="text-blue-600 font-extrabold sm:font-bold">
           Indranil Roy
         </span>
@@ -26,12 +21,9 @@ const Hero = () => {
         href="https://www.linkedin.com/in/indranil-r/"
         target="_blank"
         rel="noopener noreferrer"
-        class="border border-blue-500 text-blue-500 font-bold py-3 px-6 flex items-center gap-2 transition duration-300 ease-in-out hover:bg-blue-700 hover:text-white"
-        data-aos="fade-up"
-        data-aos-delay="800"
-        data-aos-duration="1500"
-      >
-        <SiLinkedin class="text-xl" />
+        className="border border-blue-500 text-blue-500 font-bold py-3 px-6 flex items-center gap-2 transition duration-300 ease-in-out hover:bg-blue-700 hover:text-white"
+        >
+        <SiLinkedin className="text-xl" />
         <span>View profile</span>
       </a>
     </section>

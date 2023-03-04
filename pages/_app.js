@@ -6,7 +6,9 @@ import "aos/dist/aos.css";
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 1000,
+    });
   }, []);
   return <Component {...pageProps} />;
 }
