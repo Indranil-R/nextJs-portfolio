@@ -7,7 +7,7 @@ const Hero = () => {
         src="profile.png"
         alt="Profile"
         className="w-full  animate-bounce"
-        style={{ animationDuration: "10s" }}
+        style={{ animationDuration: "6s" }}
       />
 
       <div className="text-center md:text-left">
