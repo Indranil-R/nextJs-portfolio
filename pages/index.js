@@ -11,7 +11,9 @@ export default function Home() {
       <Hero />
       <hr class="h-2 mx-8  bg-gray-200 border-0 dark:bg-gray-700 my-8" />
       <Skills />
+      <hr class="h-2 mt-8 bg-gray-200 border-0 dark:bg-gray-700" />
       <About />
+   
       <Footer />
     </>
   );
