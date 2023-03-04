@@ -1,9 +1,8 @@
 import React from "react";
-import { SiGithub } from "react-icons/si";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 const Hero = () => {
   return (
-  
     <section
       className="flex flex-col justify-center items-center h-screen px-4"
       data-aos="fade-up"
@@ -24,16 +23,16 @@ const Hero = () => {
         outstanding outcomes.
       </p>
       <a
-        href="https://github.com/indranil-r"
+        href="https://www.linkedin.com/in/indranil-r/"
         target="_blank"
         rel="noopener noreferrer"
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg flex items-center gap-2"
+        class="border border-blue-500 text-blue-500 font-bold py-3 px-6 flex items-center gap-2 transition duration-300 ease-in-out hover:bg-blue-700 hover:text-white"
         data-aos="fade-up"
         data-aos-delay="800"
         data-aos-duration="1500"
       >
-        <SiGithub class="text-xl" />
-        <span>Visit my Github</span>
+        <SiLinkedin class="text-xl" />
+        <span>View profile</span>
       </a>
     </section>
   );
