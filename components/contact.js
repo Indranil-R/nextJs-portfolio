@@ -8,11 +8,10 @@ import {
   FaGithub,
   FaInstagram,
 } from "react-icons/fa";
-import { useState } from "react";
 function Contact() {
   return (
     <>
-      <hr class="h-2 mx-8 bg-gray-200 border-0 dark:bg-gray-700" id="contact"/>
+      <hr className="h-2 mx-8 bg-gray-200 border-0 dark:bg-gray-700" id="contact"/>
 
       <section className="py-8 pb-12 px-4">
         <div className="max-w-7xl mx-auto text-center">

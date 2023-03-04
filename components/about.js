@@ -3,7 +3,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <hr class="h-2 mx-8  bg-gray-200 border-0 dark:bg-gray-700 my-8" />
+      <hr className="h-2 mx-8  bg-gray-200 border-0 dark:bg-gray-700 my-8" />
       <h1
         id="about"
         className="text-3xl font-extrabold text-center text-gray-900 uppercase tracking-wider"
@@ -32,7 +32,7 @@ const About = () => {
             <br />
             Indranil holds a Techbee certification, which is evidence of his
             commitment to staying up-to-date with the latest industry trends and
-            technologies. He is currently pursuing a Bachelor's degree in
+            technologies. He is currently pursuing a Bachelor&apos;s degree in
             Computer Application from Amity University, which further enhances
             his knowledge and skills in the field. He is a dedicated learner and
             continually seeks opportunities to improve his skills.
@@ -45,7 +45,7 @@ const About = () => {
             problem-solving, ensuring that all projects are completed on time,
             within budget, and to the highest quality standards.
             <br />
-            Indranil's dedication and professionalism make him an excellent
+            Indranil&apos;s dedication and professionalism make him an excellent
             addition to any organization looking for a software engineer with
             his skills and expertise. He has a proven track record of delivering
             high-quality work and meeting client expectations. With his passion
