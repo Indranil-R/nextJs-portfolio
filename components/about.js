@@ -4,17 +4,15 @@ import React from "react";
 const About = () => {
   return (
     <section
-      className="bg-gray-200  py-16 flex flex-wrap items-center justify-center"
+      className="bg-gray-200 w-screen py-16 flex flex-wrap items-center justify-center"
       data-aos="fade-right"
-      data-aos-duration={1000}
+      data-aos-duration={1000} 
     >
       <div className="w-full md:w-1/3 px-4">
-        <Image
-          src="https://via.placeholder.com/350x400"
+        <img
+          src="https://via.placeholder.com/400x300"
           alt="Company Logo"
-          class="rounded shadow-md"
-          width={10}
-          height={10}
+          class="rounded shadow-md w-full border border-red-400"
         />
       </div>
       <div className="w-full md:w-2/3 px-4">

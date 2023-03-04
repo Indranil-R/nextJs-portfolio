@@ -27,12 +27,12 @@ const Skills = () => {
           Below are some of the technical skills I possess and use to develop
           high-quality, efficient, and scalable software applications.
         </p>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-        >
-          <div class="card text-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="card text-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out"
+          >
             <div class="p-6">
               <SiJavascript class="text-4xl mb-2 text-blue-500 mx-auto" />
               <h3 class="text-lg font-bold mb-2 text-gray-800">JavaScript</h3>
@@ -42,7 +42,11 @@ const Skills = () => {
             </div>
           </div>
 
-          <div class="card bg-white shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg text-center">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="card bg-white shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg text-center"
+          >
             <div class="p-6">
               <SiHtml5 class="text-4xl mb-2 mx-auto text-orange-500" />
               <h3 class="text-lg font-bold mb-2 text-orange-500">HTML/CSS</h3>
@@ -52,7 +56,11 @@ const Skills = () => {
             </div>
           </div>
 
-          <div class="card bg-white  shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="card bg-white  shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+          >
             <div class="p-6">
               <SiNextdotjs class="text-4xl mb-2 mx-auto" />
               <h3 class="text-lg font-bold mb-2">Next</h3>
@@ -62,7 +70,11 @@ const Skills = () => {
               </p>
             </div>
           </div>
-          <div class="card bg-white shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+          <div
+            class="card bg-white shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <div class="p-6">
               <SiNodedotjs class=" text-green-600 text-4xl mb-2  mx-auto" />
               <h3 class="text-lg text-green-600 font-bold mb-2">Node.js</h3>
@@ -72,7 +84,11 @@ const Skills = () => {
               </p>
             </div>
           </div>
-          <div class="card shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="card shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+          >
             <div class="p-6">
               <SiGithub class=" text-4xl mb-4  mx-auto" />
               <h3 class="text-lg font-bold mb-2">Git</h3>
@@ -82,7 +98,11 @@ const Skills = () => {
               </p>
             </div>
           </div>
-          <div class="card shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="card shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+          >
             <div class="p-6">
               <SiLinux class="text-4xl mb-4  mx-auto" />
               <h3 class="text-lg font-bold mb-2">Linux/Unix</h3>
@@ -93,7 +113,11 @@ const Skills = () => {
             </div>
           </div>
 
-          <div class="card  shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="card  shadow-md rounded-lg overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+          >
             <div class="p-6">
               <SiJava class="text-4xl mb-4 mx-auto" />
               <h3 class="text-lg font-bold mb-2">Java</h3>
@@ -103,7 +127,11 @@ const Skills = () => {
               </p>
             </div>
           </div>
-          <div class="card bg-white shadow-md rounded-lg overflow-hidden  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="card bg-white shadow-md rounded-lg overflow-hidden  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+          >
             <div class="p-6">
               <SiMysql class="text-4xl mb-2 mx-auto" />
               <h3 class="text-lg font-bold mb-2">SQL</h3>
@@ -114,7 +142,11 @@ const Skills = () => {
             </div>
           </div>
 
-          <div class="card  shadow-md rounded-lg overflow-hidden  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="card  shadow-md rounded-lg overflow-hidden  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+          >
             <div class="p-6">
               <SiStrapi class="text-4xl mb-2 mx-auto text-teal-600" />
               <h3 class="text-lg font-bold mb-2 text-teal-600">Strapi</h3>
