@@ -2,7 +2,7 @@ import { SiLinkedin } from "react-icons/si";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto px-4 lg:px-8 lg:py-24 py-12">
+    <div className="mt-20 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto px-4 lg:px-8 lg:py-24 py-12">
       <img
         src="profile.png"
         alt="Profile"
@@ -29,7 +29,7 @@ const Hero = () => {
             href="https://www.linkedin.com/in/indranil-r/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-3 py-2 text-lg font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            className="inline-flex items-center px-6 py-2 text-2xl font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
             <SiLinkedin className="h-5 w-5 mr-2" />
             <span>LinkedIn</span>

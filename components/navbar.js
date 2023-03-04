@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
 import { Transition } from "@headlessui/react";
 
 const menuItems = [
   { name: "Home", url: "#" },
-  { name: "About", url: "#" },
-  { name: "Contact", url: "#" },
+  { name: "Skills", url: "#skills" },
+  { name: "About", url: "#about" },
+  { name: "Contact", url: "#contact" },
 ];
 
 function Navbar() {
@@ -14,13 +15,40 @@ function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const [hasScrolled, setHasScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <nav className="sticky top-0 z-50 shadow-lg bg-white bg-opacity-90 backdrop-blur-sm backdrop-filter w-screen overflow-hidden">
+    <nav
+      className={`fixed top-0 z-50 h-24 py-4 w-screen overflow-hidden
+    ${
+      hasScrolled &&
+      "shadow-lg bg-white bg-opacity-90 backdrop-blur-sm backdrop-filter"
+    }
+    ${
+      isOpen &&
+      "h-max shadow-lg bg-white bg-opacity-90 backdrop-blur-sm backdrop-filter"
+    }
+  `}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <span className="font-bold text-4xl">Indranil Roy</span>
+            <span className="font-bold text-3xl sm:text-4xl">Indranil Roy</span>
           </div>
           <div className="-mr-2 flex md:hidden">
             <button
@@ -43,7 +71,7 @@ function Navbar() {
                 <a
                   key={item.name}
                   href={item.url}
-                  className="px-3 py-2 border border-gray-300 rounded-3xl font-medium hover:bg-gray-100  mx-2"
+                  className="px-4 py-3 border border-gray-300 rounded-3xl font-medium hover:bg-gray-100  mx-2"
                 >
                   {item.name}
                 </a>

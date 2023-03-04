@@ -11,39 +11,6 @@ import {
   SiStrapi,
 } from "react-icons/si";
 
-// const skillCards = [
-//   {
-//     name: "JavaScript",
-//     description: "Proficient in vanilla JS, React, and Node.js.",
-//     colour: "text-blue-500",
-//     icon: <SiJavascript class="text-4xl mx-auto text-blue-500" />,
-//   },
-//   {
-//     icon: <SiJavascript class="text-4xl mx-auto" />,
-//     name: "JavaScript",
-//     description: "Proficient in vanilla JS, React, and Node.js.",
-//     colour: "text-blue-500",
-//   },
-//   {
-//     icon: '<SiJavascript class="text-4xl mx-auto" />',
-//     name: "JavaScript",
-//     description: "Proficient in vanilla JS, React, and Node.js.",
-//     colour: "text-blue-500",
-//   },
-//   {
-//     icon: '<SiJavascript class="text-4xl mx-auto" />',
-//     name: "JavaScript",
-//     description: "Proficient in vanilla JS, React, and Node.js.",
-//     colour: "text-blue-500",
-//   },
-//   {
-//     icon: '<SiJavascript class="text-4xl mx-auto" />',
-//     name: "JavaScript",
-//     description: "Proficient in vanilla JS, React, and Node.js.",
-//     colour: "text-blue-500",
-//   },
-// ];
-
 const skillCards = [
   {
     name: "JavaScript",
@@ -110,8 +77,9 @@ const skillCards = [
 
 const Skills = () => {
   return (
-    <section id="skills" class="py-10 w-screen">
-      <div class="container mx-auto px-16" data-aos="fade-up">
+    <>
+      <hr class="h-2 mx-8  bg-gray-200 border-0 dark:bg-gray-700 my-8" />
+      <div class="container mx-auto px-16" id="skills" data-aos="fade-up">
         <h2 class="text-3xl font-extrabold mb-4 text-center text-gray-900 uppercase tracking-wider">
           Technical Skills & Expertise
         </h2>
@@ -139,7 +107,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </section>
+    </>
   );
 };
 
