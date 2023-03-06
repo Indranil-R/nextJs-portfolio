@@ -10,7 +10,6 @@ const menuItems = [
 ];
 
 function Navbar() {
- 
   const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
@@ -30,7 +29,7 @@ function Navbar() {
   }, []);
   return (
     <nav
-      className={`fixed top-0 z-50 md:h-24 md:py-4 w-screen overflow-hidden h-16 shadow-lg bg-white bg-opacity-90 backdrop-blur-sm backdrop-filter
+      className={`sticky top-0 left-0 right-0 z-50 md:h-24 md:py-4 w-screen overflow-hidden h-16 
     ${
       hasScrolled &&
       "shadow-lg bg-white bg-opacity-90 backdrop-blur-sm backdrop-filter"
