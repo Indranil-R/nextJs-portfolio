@@ -30,10 +30,9 @@ function Navbar() {
   return (
     <nav
       className={`sticky top-0 left-0 right-0 z-50 md:h-24 md:py-4 w-screen overflow-hidden h-16 
-    ${
-      hasScrolled &&
-      "shadow-lg bg-white bg-opacity-90 backdrop-blur-sm backdrop-filter"
-    }
+    ${hasScrolled &&
+        "shadow-lg bg-white bg-opacity-90 backdrop-blur-sm backdrop-filter"
+        }
  
   `}
     >
@@ -46,31 +45,6 @@ function Navbar() {
           </button>
         </div>
       </div>
-      {/* <Transition
-        show={isOpen}
-        enter="transition ease-out duration-100 transform"
-        enterFrom="opacity-0 scale-95"
-        enterTo="opacity-100 scale-100"
-        leave="transition ease-in duration-75 transform"
-        leaveFrom="opacity-100 scale-100"
-        leaveTo="opacity-0 scale-95"
-      >
-        {(ref) => (
-          <div className="md:hidden" ref={ref}>
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {menuItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.url}
-                  className="block px-3 pl-5 py-2 rounded-md text-base font-medium hover:bg-gray-100"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-          </div>
-        )}
-      </Transition> */}
     </nav>
   );
 }
