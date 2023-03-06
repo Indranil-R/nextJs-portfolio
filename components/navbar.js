@@ -10,11 +10,7 @@ const menuItems = [
 ];
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+ 
   const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
