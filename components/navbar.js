@@ -34,53 +34,24 @@ function Navbar() {
   }, []);
   return (
     <nav
-      className={`fixed top-0 z-50 h-24 py-4 w-screen overflow-hidden
+      className={`fixed top-0 z-50 md:h-24 md:py-4 w-screen overflow-hidden h-16 shadow-lg bg-white bg-opacity-90 backdrop-blur-sm backdrop-filter
     ${
       hasScrolled &&
       "shadow-lg bg-white bg-opacity-90 backdrop-blur-sm backdrop-filter"
     }
-    ${
-      isOpen &&
-      "h-max shadow-lg bg-white bg-opacity-90 backdrop-blur-sm backdrop-filter"
-    }
+ 
   `}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <span className="font-bold text-3xl sm:text-4xl">Indranil Roy</span>
-          </div>
-          <div className="-mr-2 flex md:hidden">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-black transition duration-1000 ease-in-out "
-              aria-expanded={isOpen}
-              onClick={toggleMenu}
-            >
-              <span className="sr-only">Open main menu</span>
-              {isOpen ? (
-                <MdClose className="block h-6 w-6" aria-hidden="true" />
-              ) : (
-                <MdMenu className="block h-6 w-6" aria-hidden="true" />
-              )}
-            </button>
-          </div>
-          <div className="hidden md:block">
-            <div className="flex items-center">
-              {menuItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.url}
-                  className="px-4 py-3 border border-gray-300 rounded-3xl font-medium hover:bg-gray-100  mx-2"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-          </div>
+          <span className="font-bold text-2xl sm:text-4xl">Indranil Roy</span>
+
+          <button class="bg-gray-800 text-white font-medium py-2 px-4 rounded-3xl hover:bg-gray-700 focus:outline-none focus:bg-gray-700 active:bg-gray-900 sm:py-3 sm:px-6 lg:py-4 lg:px-8">
+            Connect
+          </button>
         </div>
       </div>
-      <Transition
+      {/* <Transition
         show={isOpen}
         enter="transition ease-out duration-100 transform"
         enterFrom="opacity-0 scale-95"
@@ -104,7 +75,7 @@ function Navbar() {
             </div>
           </div>
         )}
-      </Transition>
+      </Transition> */}
     </nav>
   );
 }
